@@ -1,0 +1,55 @@
+.planet {
+  position: absolute;
+}
+
+#mercury {
+  top: calc((100% - 100px)/2);
+  left: calc((100% - 100px)/2);
+  width: 100px;
+  height: 100px;
+  animation: orbit 6s infinite linear;
+  border: 2px solid grey;
+  border-radius: 50%;
+}
+#mercury:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: calc(50% - 7.5px);
+  left: -7.5px;
+  border-radius: 50%;
+  background: red;
+  box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
+  animation: orbit 5s infinite linear;
+}
+
+#venus {
+  top: calc((100% - 200px)/2);
+  left: calc((100% - 200px)/2);
+  width: 200px;
+  height: 200px;
+  animation: orbit 10s infinite linear;
+  border: 2px solid grey;
+  border-radius: 50%;
+}
+#venus:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: calc(50% - 7.5px);
+  left: -7.5px;
+  border-radius: 50%;
+  background: brown;
+  box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
+  animation: orbit 5s infinite linear;
+}
+
+@keyframes orbit {
+  100% {
+    transform: rotate(360deg);
+  }
+}
