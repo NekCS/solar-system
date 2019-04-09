@@ -1,5 +1,19 @@
+body {
+  background: #222;
+}
+
 .planet {
   position: absolute;
+  border: 1px solid #333;
+  border-radius: 50%;
+  webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
 }
 
 #mercury {
@@ -8,33 +22,71 @@
   width: 100px;
   height: 100px;
   animation: orbit 6s infinite linear;
-  border: 2px solid grey;
-  border-radius: 50%;
 }
 #mercury:before {
   content: "";
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  top: calc(50% - 7.5px);
-  left: -7.5px;
+  top: calc(50% - 5px);
+  left: -5px;
   border-radius: 50%;
-  background: red;
+  background: #bb925c;
   box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
-  animation: orbit 5s infinite linear;
+  /* animation: orbit 5s infinite linear; */
 }
 
 #venus {
+  top: calc((100% - 150px)/2);
+  left: calc((100% - 150px)/2);
+  width: 150px;
+  height: 150px;
+  animation: orbit 10s infinite linear;
+}
+#venus:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: -10px;
+  border-radius: 50%;
+  background: #dfa34a;
+  box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
+  /* animation: orbit 5s infinite linear; */
+}
+
+#earth {
   top: calc((100% - 200px)/2);
   left: calc((100% - 200px)/2);
   width: 200px;
   height: 200px;
-  animation: orbit 10s infinite linear;
-  border: 2px solid grey;
-  border-radius: 50%;
+  animation: orbit 60s infinite linear;
 }
-#venus:before {
+#earth:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: -10px;
+  border-radius: 50%;
+  background: #788086;
+  box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
+  /* animation: orbit 5s infinite linear; */
+}
+
+#mars {
+  top: calc((100% - 250px)/2);
+  left: calc((100% - 250px)/2);
+  width: 250px;
+  height: 250px;
+  animation: orbit 90s infinite linear;
+}
+#mars:before {
   content: "";
   display: block;
   width: 15px;
@@ -43,9 +95,93 @@
   top: calc(50% - 7.5px);
   left: -7.5px;
   border-radius: 50%;
-  background: brown;
+  background: #88725d;
   box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
-  animation: orbit 5s infinite linear;
+  /* animation: orbit 5s infinite linear; */
+}
+
+#jupiter {
+  top: calc((100% - 450px)/2);
+  left: calc((100% - 450px)/2);
+  width: 450px;
+  height: 450px;
+  animation: orbit 180s infinite linear;
+}
+#jupiter:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: calc(50% - 20px);
+  left: -20px;
+  border-radius: 50%;
+  background: #8c887c;
+  box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
+  /* animation: orbit 5s infinite linear; */
+}
+
+#saturn {
+  top: calc((100% - 550px)/2);
+  left: calc((100% - 550px)/2);
+  width: 550px;
+  height: 550px;
+  animation: orbit 240s infinite linear;
+}
+#saturn:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: -25px;
+  border-radius: 50%;
+  background: #cdb692;
+  box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
+  /* animation: orbit 5s infinite linear; */
+}
+
+#uranus {
+  top: calc((100% - 650px)/2);
+  left: calc((100% - 650px)/2);
+  width: 650px;
+  height: 650px;
+  animation: orbit 300s infinite linear;
+}
+#uranus:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: -10px;
+  border-radius: 50%;
+  background: #8eaabd;
+  box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
+  /* animation: orbit 5s infinite linear; */
+}
+
+#neptune {
+  top: calc((100% - 700px)/2);
+  left: calc((100% - 700px)/2);
+  width: 700px;
+  height: 700px;
+  animation: orbit 360s infinite linear;
+}
+#neptune:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: -10px;
+  border-radius: 50%;
+  background: #51628d;
+  box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.75);
+  /* animation: orbit 5s infinite linear; */
 }
 
 @keyframes orbit {
