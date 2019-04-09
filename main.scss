@@ -46,11 +46,11 @@ body {
 }
 
 #mercury {
-    @include planet(100px, $earth-orbit-dur / 10, 10px, "#bb925c");
+    @include planet(100px, $earth-orbit-dur * 0.24, 10px, "#bb925c");
 }
 
 #venus {
-    @include planet(150px, $earth-orbit-dur / 6, 20px, "#dfa34a");
+    @include planet(150px, $earth-orbit-dur * 0.62, 20px, "#dfa34a");
 }
 
 #earth {
@@ -58,23 +58,23 @@ body {
 }
 
 #mars {
-    @include planet(250px, $earth-orbit-dur*1.5, 15px, "#88725d");
+    @include planet(250px, $earth-orbit-dur * 1.90, 15px, "#88725d");
 }
 
 #jupiter {
-    @include planet(450px, $earth-orbit-dur*3, 40px, "#8c887c");
+    @include planet(450px, $earth-orbit-dur * 12, 40px, "#8c887c");
 }
 
 #saturn {
-    @include planet(550px, $earth-orbit-dur*4, 50px, "#cdb692");
+    @include planet(550px, $earth-orbit-dur * 29, 50px, "#cdb692");
 }
 
 #uranus {
-    @include planet(650px, $earth-orbit-dur*5, 20px, "#8eaabd");
+    @include planet(650px, $earth-orbit-dur * 84, 20px, "#8eaabd");
 }
 
 #neptune {
-    @include planet(700px, $earth-orbit-dur*6, 20px, "#51628d");
+    @include planet(700px, $earth-orbit-dur * 165, 20px, "#51628d");
 }
 
 @keyframes orbit {

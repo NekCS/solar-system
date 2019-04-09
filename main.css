@@ -21,7 +21,7 @@ body {
   left: calc((100% - 100px)/2);
   width: 100px;
   height: 100px;
-  animation: orbit 6s infinite linear;
+  animation: orbit 14.4s infinite linear;
 }
 #mercury:before {
   content: "";
@@ -42,7 +42,7 @@ body {
   left: calc((100% - 150px)/2);
   width: 150px;
   height: 150px;
-  animation: orbit 10s infinite linear;
+  animation: orbit 37.2s infinite linear;
 }
 #venus:before {
   content: "";
@@ -84,7 +84,7 @@ body {
   left: calc((100% - 250px)/2);
   width: 250px;
   height: 250px;
-  animation: orbit 90s infinite linear;
+  animation: orbit 114s infinite linear;
 }
 #mars:before {
   content: "";
@@ -105,7 +105,7 @@ body {
   left: calc((100% - 450px)/2);
   width: 450px;
   height: 450px;
-  animation: orbit 180s infinite linear;
+  animation: orbit 720s infinite linear;
 }
 #jupiter:before {
   content: "";
@@ -126,7 +126,7 @@ body {
   left: calc((100% - 550px)/2);
   width: 550px;
   height: 550px;
-  animation: orbit 240s infinite linear;
+  animation: orbit 1740s infinite linear;
 }
 #saturn:before {
   content: "";
@@ -147,7 +147,7 @@ body {
   left: calc((100% - 650px)/2);
   width: 650px;
   height: 650px;
-  animation: orbit 300s infinite linear;
+  animation: orbit 5040s infinite linear;
 }
 #uranus:before {
   content: "";
@@ -168,7 +168,7 @@ body {
   left: calc((100% - 700px)/2);
   width: 700px;
   height: 700px;
-  animation: orbit 360s infinite linear;
+  animation: orbit 9900s infinite linear;
 }
 #neptune:before {
   content: "";
